@@ -1,0 +1,100 @@
+/* Fonts */
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(./fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(./fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Black;
+  src: url(./fonts/Raleway/static/Raleway-Black.ttf);
+}
+
+/* Custom Properties */
+:root {
+  --blanco: #ffffff;
+  --negro: #111111;
+  --gris: #343a40;
+  --fontPrincipal: "Raleway", sans-serif;
+  --fontBlack: "Raleway-Black", sans-serif;
+  --fontBold: "Raleway-Bold", sans-serif;
+}
+
+/* Globales */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--fontPrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fontBlack);
+  margin: 1rem 0 4rem 0;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 5.8rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  color: var(--gris);
+  background-color: var(--blanco);
+  border: 1px solid var(--gris);
+  padding: .5rem 2rem;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+.btn:hover {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
