@@ -14,6 +14,11 @@
   src: url(./fonts/Raleway/static/Raleway-Black.ttf);
 }
 
+@font-face {
+  font-family: Raleway-Light;
+  src: url(./fonts/Raleway/static/Raleway-Light.ttf);
+}
+
 /* Custom Properties */
 :root {
   --blanco: #ffffff;
@@ -22,6 +27,7 @@
   --fontPrincipal: "Raleway", sans-serif;
   --fontBlack: "Raleway-Black", sans-serif;
   --fontBold: "Raleway-Bold", sans-serif;
+  --fontLight: "Raleway-Light", sans-serif;
 }
 
 /* Globales */
@@ -97,4 +103,140 @@ a {
 
 .mt-5 {
   margin-top: 5rem;
+}
+
+/* Header */
+.header {
+  min-height: 60rem;
+  background-image: image-set('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 5rem 0;
+}
+
+@media screen and (min-width: 1900px) {
+  .header {
+    background-position: center -80rem;
+  }
+}
+
+.header a {
+  color: var(--blanco);
+  font-size: 2rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(60rem - 4rem);
+  justify-content: space-between;
+  color: var(--blanco);
+}
+
+.nombre-sitio {
+  font-family: var(--fontLight);
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nombre-sitio {
+    font-size: 6rem;
+  }
+}
+
+.nombre-sitio span {
+  font-family: var(--fontBold);
+}
+
+@media screen and (min-width: 800px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto {
+    align-items: flex-end;
+  }
+}
+
+.telefono {
+  display: flex;
+}
+
+.telefono::before {
+  display: block;
+  content: '';
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  background-image: url(../img/telefono.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
+
+.navegacion a {
+  text-align: center;
+  padding: .5rem;
+  transition-property: background-color;
+  transition-duration: .3s;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navegacion a {
+    padding: 1rem 2rem;
+  }
+}
+
+.navegacion a:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.slogan {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .slogan {
+    text-align: right;
+  }
+
+  .slogan h1 {
+    font-size: 5rem;
+  }
+}
+
+.slogan h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.slogan p {
+  margin: 0;
+  line-height: 1;
 }
