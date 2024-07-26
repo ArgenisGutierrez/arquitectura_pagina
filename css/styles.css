@@ -122,7 +122,7 @@ a {
   }
 }
 
-.header a {
+.contacto a {
   color: var(--blanco);
   font-size: 2rem;
 }
@@ -132,13 +132,13 @@ a {
   flex-direction: column;
   height: calc(60rem - 4rem);
   justify-content: space-between;
-  color: var(--blanco);
 }
 
 .nombre-sitio {
   font-family: var(--fontLight);
   font-size: 3.8rem;
   text-align: center;
+  color: var(--blanco);
 }
 
 @media screen and (min-width: 768px) {
@@ -220,6 +220,7 @@ a {
 
 .slogan {
   text-align: center;
+  color: var(--blanco);
 }
 
 @media screen and (min-width: 768px) {
@@ -393,4 +394,25 @@ a {
 
 .galeria img {
   object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  height: 50rem;
+  background-image: url(../img/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.copyright {
+  background-color: var(--negro);
+  margin: 5rem 0 0 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--blanco);
 }
